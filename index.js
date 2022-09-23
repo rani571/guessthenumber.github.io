@@ -5,7 +5,7 @@ let userNumberUpdate = document.getElementById("inputBox");
 let audio = new Audio("./audio/music.wav");
 
 const init = () => {
-    computerGuess = Math.floor(Math.random() * 100);
+    computerGuess = Math.floor(Math.random() * (100 - 1) + 1);
     // console.log(computerGuess);
     document.getElementById("newGameButton").style.display = "none";
     document.getElementById("gameArea").style.display = "none";
